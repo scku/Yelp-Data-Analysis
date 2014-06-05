@@ -219,7 +219,7 @@ def main():
 	''' Draw graph G '''
 	#draw_graph3d(G_5)
 	#draw_graph3d(G_10)
-	draw_graph3d(G_100)
+	#draw_graph3d(G_100)
 	#draw_graph3d(nodes_top_500, adj_list_top_500)
 	draw_graph3d(G_1000)
 	#draw_graph2d(nodes_subset, adj_list_subset)
