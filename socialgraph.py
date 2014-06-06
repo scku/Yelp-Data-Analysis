@@ -204,6 +204,7 @@ def main():
 	G_10 = build_graph(nodes_top_10, adj_list_top_10)
 	G_100 = build_graph(nodes_top_100, adj_list_top_100)
 	G_1000 = build_graph(nodes_top_1000, adj_list_top_1000)
+	G_500 = build_graph(nodes_top_500, adj_list_top_500)
 	G_all = build_graph(nodes_all, adj_list_all)
 
 	''' Analysis graph G '''
@@ -220,8 +221,8 @@ def main():
 	#draw_graph3d(G_5)
 	#draw_graph3d(G_10)
 	#draw_graph3d(G_100)
-	#draw_graph3d(nodes_top_500, adj_list_top_500)
-	draw_graph3d(G_1000)
+	draw_graph3d(G_500)
+	#draw_graph3d(G_1000)
 	#draw_graph2d(nodes_subset, adj_list_subset)
 
 	return
