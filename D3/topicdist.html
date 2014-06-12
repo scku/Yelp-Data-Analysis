@@ -116,6 +116,12 @@ d3.csv("topicdist.csv", function(error, data) {
       .style("text-anchor", "end")
       .text(function(d) { return d; });
 
+  svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2) + 5)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")   
+        .text("Topic Distribution");
 });
 
 </script>

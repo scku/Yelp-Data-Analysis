@@ -99,6 +99,13 @@ d3.csv("1star_topicdist.csv", function(error, data) {
       .attr("y", function(d) { return y(d.frequency); })
       .attr("height", function(d) { return height - y(d.frequency); });
 
+  svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2) + 5)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .text("Topic Distribution of 1-Star Reviews");
+
   d3.select("input").on("change", change);
 
   var sortTimeout = setTimeout(function() {
